@@ -1,0 +1,84 @@
+tr, td
+ {
+    border: 2px solid #333;
+}
+.tableau1 {
+
+    border-collapse:  collapse ;
+    width: 100%;
+    font-size: 23px;
+    
+}
+.div1 { font-size: 35px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;;
+
+}
+#id {
+    text-align: center;
+}
+.tableau2 {
+    border-collapse:  collapse ;
+    width: 100%;
+    font-size: 20px;
+}
+.div2 { font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 40px;
+
+}
+.div3 { font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 40px;
+    margin-bottom: 35px;
+
+}
+.div4 { font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 40px;
+
+}
+.tableau3  {
+    border-collapse:  collapse ;
+    width: 100%;
+    margin-top: 35px;
+    font-size: 20px;
+}
+.tableau4 {
+    border-collapse:  collapse ;
+    width: 100%;
+    font-size: 20px;
+}
+.tableau5 {
+    border-collapse:  collapse ;
+    width: 100%;
+    font-size: 20px;
+}
+.page {
+    border : 4px solid rgb(40, 50, 134) ;
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px black ;
+    padding: 10px;
+    background-color:white;
+}
+body {
+    background-color : grey;
+}
+.tableau1:hover {
+    color: green;
+}
+.tableau2:hover {
+    color:green;
+}
+.tableau3:hover {
+    color:green;
+}
+.tableau4:hover {
+    color:green;
+}
+.tableau5:hover {
+    color:green;
+}
