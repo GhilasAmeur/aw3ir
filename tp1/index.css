@@ -63,12 +63,17 @@ tr, td
     box-shadow: 2px 3px 4px black ;
     padding: 10px;
     background-color:white;
+    
 }
 body {
-    background-color : grey;
+    
+    max-width: 800px;
+    background-color :red;
+    height: auto;
+
 }
 .tableau1:hover {
-    color: green;
+    color: blueviolet;
 }
 .tableau2:hover {
     color:green;
@@ -81,4 +86,9 @@ body {
 }
 .tableau5:hover {
     color:green;
+}
+.page{
+
+    margin-top: 150px;
+    margin-left; 300px;
 }
