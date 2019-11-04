@@ -1,4 +1,4 @@
-<!doctype html>
+<!--  <!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -8,8 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
+         Place favicon.ico in the root directory -->
+<!--
         <style>
           body{
               
@@ -21,15 +21,74 @@
           }
         </style>
         
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
+         Code à dé-commenter si besoin de fichier CSS ou JS -->
         <!--<link rel="stylesheet" href="style.css">-->
         <!--<script src="js/main.js"></script>-->
-    </head>
+ <!--   </head>
     <body>        
         <h1>tp2</h1>
         <p>Fofana</p>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+         Add your site or application content here -->
+      <!--  <p>Hello world! This is HTML5 Boilerplate.</p>
         <img src="../galilee.png" alt="Logo Galilee"/>
     </body>
 </html>
+-->
+
+<!-- TP2 COMMENCE ICI AMEUR GHILAS-->
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TP2</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+
+<body>
+     <div class="page1"  ><h1>Saisie d'une fiche "Personne" </h1> 
+        <div class="page2">
+            <form method="POST" action="" autocomplete="on" id="validation">
+                    <label  for="nom" >Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom" required ><br/>
+
+                    <label  for="prenom" >Prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Prenom"><br/>
+
+                    <label  for="date">Date de naissance</label>
+                    <input type="date" id="date" name="date" placeholder="Date"><br/>
+
+                    <label  for="adresse">Adresse</label>
+                    <input id="adresse" name="adresse" placeholder="Adresse"><br/>
+
+                    <label  for="email">Mail</label>
+                    <input type="email" id="email" name="email" placeholder="Email"><br/>
+
+                    <input type="submit" value="Valider" class="sub" id="bouton_envoi">
+
+
+                </form>
+
+
+                
+
+
+
+
+            
+
+
+            </div>
+
+
+        </div>
+       <!--<div style="color: red;"    id="erreur1"></div>--> 
+        <span style="color: red;"    id="erreur"></span>
+        <script src="index.js"></script>
+
+   
+
+
+
+</body>
