@@ -60,14 +60,30 @@ label{
     font-size: medium;
 }
 #erreur{
-    background-color :rgba(226, 17, 58, 0.6);
+    background-color :red;
     font-size:20px;
     font-style: normal;
     padding: 5px;
     border: 1px;
- 
-    width: 100px;
-    height: 10px;
+    padding-left: 100px;
+    width: 200px;
+    height: 20px;
+    margin-left: 200px;
+    margin-bottom: 200px;
+    
+   
+}
+#resultat{
+    background-color :green;
+    font-size:20px;
+    font-style: normal;
+    padding: 5px;
+    border: 1px;
+    padding-left: 100px;
+    width: 200px;
+    height: 20px;
+    margin-left: 200px;
+    margin-bottom: 200px;
     
    
 }
