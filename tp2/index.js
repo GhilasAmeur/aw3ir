@@ -12,7 +12,7 @@ document.getElementById("validation").addEventListener("submit", function (e) {
     // var erreur1;
     var inputs = document.getElementsByTagName("input")
     for (i = 0; i < inputs.length; i++) {
-        if (!inputs[i].value && inputs[i].value.length < 5) {
+        if (!inputs[i].value || inputs[i].value.length < 5) {
             var id = inputs[i].id;
             var label = document.querySelector("[for='"+id+"']").textContent
             erreur += "Saisir " + label +"<br/>";
