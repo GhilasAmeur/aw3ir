@@ -6,7 +6,7 @@
     // console.log( "DOM ready!" );
      
      // Y mettre le code jQuery pour valider tous les champs du formulaire
- 
+ /*
 
  function validation(){
 
