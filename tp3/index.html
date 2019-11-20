@@ -8,12 +8,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        <script src="js/jquery-3.2.1.slim.min.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
 
         <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.2.1.slim.min.js"></script>
         <script src="js/form-jquery-validation.js"></script>
 
 
@@ -37,16 +38,28 @@
         <p>Hello world! This is HTML5 Boilerplate.</p>
         <img src="../galilee.png" alt="Logo Galilee"/>
 
+       
+
         <div class="container">
           <div class="row">
             <form action="" class="form-horizontal">
 
               <div class="form-group">
-                <label for="nom" class="col-md-3">Nom</label>
-
-                <div class="col-md_8">
-                <input type="text" placeholder="Saisair votre nom" class="form-control">
+                <div class="col-md-8">
+                <label for="nom" class="col-md-3 control-label">Nom</label>
               </div>
+                <input type="text" placeholder="Votre nom" class="form-control">
+
+               
+              </div>
+              <div class="form-group">
+                  <div class="col-md-8">
+                  <label for="password" class="col-md-3 control-label">Mot de passe</label>
+                </div>
+                  <input type="password" placeholder="Votre mot de passe" class="form-control">
+  
+                 
+                </div>
               </div>
             </form>
 
