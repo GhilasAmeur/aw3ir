@@ -1,38 +1,35 @@
 <!doctype html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP3</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
-
-        <script src="js/popper.min.js"></script>
-        <script src="js/valid.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery-3.2.1.slim.min.js"></script>
-        <script src="js/form-jquery-validation.js"></script>
-
-
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
-    </head>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" ></script>  <!-- la laibraire JQUERY -->
+       <script src="js/bootstrap.min.js" type="text/javascript" ></script>
+       <script src="js/form-jquery-validation.js" type="text/javascript" ></script>
+     
+       <!-- la fonction datepicker se trouve dans la librairie jquery-ui -->
+          <script src=" https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript" type="text/javascript"  > </script> 
+       <!-- le CSS qui vient avec --> 
+          <link rel="stylesheet" href=" https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+          <meta charset="utf-8">
+          <title>TP3</title>
+          <style>
+              .container{
+                background:gray;
+                padding:10px;
+                width:700px;
+              }
+              .label {
+                font-size: 16px;
+                margin-top: 20px;
+                font-weight: normal;
+              }
+             
+            </style>
+          </head>
+      
+          
+    
     <body>        
         <h1>tp3</h1>
         <!-- Add your site or application content here -->
@@ -45,29 +42,31 @@
                 <form>
                         <div class="form-group">
 
-                          <label for="nom">Nom</label>
-                          <input type="nom" class="form-control" id="nom" aria-describedby="nomHelp" placeholder="Votre nom">
+                          <label for="nom"> <strong>Nom</strong></label>
+                          <input type="nom" class="form-control col-md-6" id="nom" aria-describedby="nomHelp" placeholder="Votre nom">
                          
                         </div>
 
                         <div class="form-group">
-                                <label for="prenom">Prenom</label>
-                                <input type="prenom" class="form-control" id="prenom" aria-describedby="prenomHelp" placeholder="Votre prenom">
+                                <label for="prenom"><strong>Prenom</strong></label>
+                                <input type="prenom" class="form-control col-md-6" id="prenom" aria-describedby="prenomHelp" placeholder="Votre prenom">
+                        </div>
+
+                        
+
+                        <div class="form-group">
+                                <label for="datepicker-wdt"><strong>Date de Naissance</strong></label>
+                                <input type="text" class="form-control col-md-6" id="datepicker-wdt" name="datepicker-wdt" placeholder="JJ/MM/AAAA">
                         </div>
 
                         <div class="form-group">
-                                <label for="date_de_naissance">Date de naissance</label>
-                                <input type="date_de_naissance" class="form-control" id="date_de_naissance" aria-describedby="date_de_naissanceHelp" placeholder="Votre date de naissance">
+                                <label for="adresse"><strong>Adresse</strong></label>
+                                <input type="adresse" class="form-control col-md-6" id="adresse" aria-describedby="adresseHelp" placeholder="Votre adresse">
                         </div>
 
                         <div class="form-group">
-                                <label for="adresse">Votre adresse</label>
-                                <input type="adresse" class="form-control" id="adresse" aria-describedby="adresseHelp" placeholder="Votre adresse">
-                        </div>
-
-                        <div class="form-group">
-                                <label for="mail">Mail</label>
-                                <input type="mail" class="form-control" id="mail" aria-describedby="mailHelp" placeholder="Mail">
+                                <label for="mail"><strong>Mail</strong></label>
+                                <input type="mail" class="form-control col-md-6" id="mail" aria-describedby="mailHelp" placeholder="Mail">
                         </div>
 
                         
@@ -75,8 +74,25 @@
                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
                           <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div>  -->
-                        <button type="button" onclick="validation()" class="btn btn-primary">Submit</button>
-                      </form> 
+                        <div class="row"> 
+                            <label class="col-2 col-form-label" for="sub1"> </label>		
+                             <button onclick="validation()" type="button" class="col-2 btn btn-primary" id="sub1" name="sub1"><strong>Valider</strong></button>
+                             </div>
+           
+ <!-- <div class="container">
+
+     <div class="row">
+      <div class="col-md-3"></div>
+         <div class="col-md-6"> <h1 class ="text-center">Formulaire</h1> </div>
+           <div class="col-md-6"></div>
+              <label class="label col-md-3 control-label"> LOGIN </label>
+                <div class="col-md-9"> 
+                  <input type="text" class="form-control" name="name" placeholder="Login">
+                </div>                    
+        </div>
+</div>
+      -->              
+</form> 
 
 
         </div>
