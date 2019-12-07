@@ -56,7 +56,7 @@ $(document).ready(function () {
 
 function validation() {
    console.log('validation marche bien');
-   $('#myModal').modal("show");
+  // $('#myModal').modal("show");
 
 
    var error = "";
@@ -84,15 +84,44 @@ function validation() {
    }
 
    if (error == "") {
-      $(".modal-title").text('Bienvenue ' + nom);
+     // $(".modal-title").text('Bienvenue ' + nom);
+    
       //$(".modal-body").html('vous êtes nés le '  + date_de_naissance+ ' et vous habitez : ' + '<img src="https://maps.googleapis.com/maps/api/staticmap?markers=' + adresse + '&zoom=14&size=150x150&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg"> </img> </br>' + adresse);
+      contactStore.add(nom,prenom,date_de_naissance, adresse, mail);
+
+      var list = contactStore.getList()
+     // console.log(list);
+      //console.log(list.length);
+      $(function () {
+        // var myArray = ["one", "two", "three", "four", "five"];
+         $.each(list, function (index, value) {
+             console.log(value);
+         });
+     });
+      
+      //for(var i = 0;i<list.length;i++){
+        // console.log('Index = '+ i +' |valeur = '+list[i])
+        //list.forEach(function(item){
+           //console.log(list);
+
+        //});
+     // }
    }
    else {
-      $(".modal-title").text('Message Modal');
-      $(".modal-body").html('les champs ' + error + ' doivent être remplis');
+     // $(".modal-title").text('Message Modal');
+    //  $(".modal-body").html('les champs ' + error + ' doivent être remplis');
    }
 
-   $('#myModal').modal("show");
+  // $('#myModal').modal("show");
+
+   
+  
 
 }
 
+/*var form = document.getElementById("myForm");
+form.addEventListener("button", function (event) {
+   event.preventDefault();
+
+  // sendData();
+ });*/
