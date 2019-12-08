@@ -83,21 +83,30 @@ function validation() {
       error += "mail, ";
    }
 
-   if (error == "") {
-     // $(".modal-title").text('Bienvenue ' + nom);
+if (error == "") {
+      $(".modal-title").text('Bienvenue ' + nom);
     
-      //$(".modal-body").html('vous êtes nés le '  + date_de_naissance+ ' et vous habitez : ' + '<img src="https://maps.googleapis.com/maps/api/staticmap?markers=' + adresse + '&zoom=14&size=150x150&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg"> </img> </br>' + adresse);
+      $(".modal-body").html('vous êtes nés le '  + date_de_naissance+ ' et vous habitez : ' + '<img src="https://maps.googleapis.com/maps/api/staticmap?markers=' + adresse + '&zoom=14&size=150x150&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg"> </img> </br>' + adresse);
       contactStore.add(nom,prenom,date_de_naissance, adresse, mail);
-
       var list = contactStore.getList()
+list.forEach(function(){
+
+         document.querySelector("#monTableau").innerHTML = document.querySelector("#monTableau").innerHTML +
+         '<tr><td>'+nom+'</td><td>'+prenom+'</td><td>'+'</td><td>'+date_de_naissance+'</td><td>'+
+         '</td><td>'+'<a href="https://maps.google.com/?q='+adresse+'">'+adresse+'</td><td>'+
+
+         '</td><td>'+'<a href="mailto:'+mail+'">'+mail+'</td><td></tr>';
+         
+         list.pop();
+      });
      // console.log(list);
       //console.log(list.length);
-      $(function () {
+     // $(function () {
         // var myArray = ["one", "two", "three", "four", "five"];
-         $.each(list, function (index, value) {
-             console.log(value);
-         });
-     });
+        // $.each(list, function (index, value) {
+          //   console.log(value);
+         //});
+    // });
       
       //for(var i = 0;i<list.length;i++){
         // console.log('Index = '+ i +' |valeur = '+list[i])
@@ -111,7 +120,7 @@ function validation() {
      // $(".modal-title").text('Message Modal');
     //  $(".modal-body").html('les champs ' + error + ' doivent être remplis');
    }
-
+   $(".modal-title").text('Bienvenue ' + nom);
   // $('#myModal').modal("show");
 
    
